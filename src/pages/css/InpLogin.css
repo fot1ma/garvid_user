@@ -460,7 +460,7 @@
   height: 50px;
   background-color: #536DFD;
   font-size: 18px;
-  margin-top: 40px;
+  margin-top: 10%;
   border-radius: 10px;
   margin-left: 5px;
 }
@@ -1106,5 +1106,16 @@
   .all-button button{
     width: 130px;
     font-size: 13px;
+  }
+}
+@media (max-width:1148px) {
+  .all-button{
+    margin-top: 10%;
+  }
+}
+@media (max-width:448px) {
+  
+  .all-button{
+    margin-top: 25%;
   }
 }
