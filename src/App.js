@@ -10,8 +10,8 @@ import User from "./pages/js/user"
 import Mento from "./pages/js/Mentor"
 import Video from "./pages/js/Youtube1";
 import Contacts from "./pages/js/Contacts";
-
-
+import InpLogin from './pages/js/InpLogin';
+import Fullnavbar from './pages/js/FullNavbar'
 
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -19,9 +19,12 @@ export default function App() {
 
   return (
     <div>
+      
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path='/InpLogin' element={<InpLogin/>}/>
+          <Route path='/Fullnavbar' element={<Fullnavbar/>}/>
           <Route path="/about" element={<About />} />
           <Route path="/servis" element={<Services />} />
           <Route path="/blog" element={<Blog />} />
@@ -32,7 +35,6 @@ export default function App() {
           <Route path="/mentor" element={<Mento />} />
           <Route path="/contacts" element={<Contacts/>} />
           <Route path="/video" element={<Video />} />
-
           {/* <Route index element={} />*/}
         </Routes>
       </BrowserRouter>
